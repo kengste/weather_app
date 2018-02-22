@@ -8,9 +8,6 @@ import Weather from './Weather';
 
 
 class App extends Component {
-  componentDidMount() {
-    // this.props.fetchWeather('lon');
-  }
   render() {
     return (
         <BrowserRouter>

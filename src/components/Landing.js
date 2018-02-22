@@ -10,11 +10,9 @@ class Landing extends Component {
     this.handleChange = this.handleChange.bind(this);
     this.handleSubmit = this.handleSubmit.bind(this);
   }
-  componentDidMount() {}
   handleChange(event) {
     this.setState({value: event.target.value});
   }
-
   handleSubmit(event) {
     this.props.fetchLocation(this.state.value);
     event.preventDefault();
