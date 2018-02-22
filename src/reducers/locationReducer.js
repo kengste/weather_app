@@ -1,6 +1,6 @@
 import { FETCH_LOCATION } from '../actions/types';
 
-export default function(state = [], action) {
+export const locationReducer = (state = [], action) => {
   console.log(action);
   switch (action.type) {
     case FETCH_LOCATION:

@@ -1,10 +1,9 @@
 import { FETCH_WEATHER } from '../actions/types';
 
-export default function(state = [], action) {
-  console.log(action);
+export const weatherReducer = (state = [], action) => {
   switch (action.type) {
     case FETCH_WEATHER:
-      return action.payload.data.consolidated_weather || [];
+      return action.payload.consolidated_weather || [];
     default:
       return state;
   }
