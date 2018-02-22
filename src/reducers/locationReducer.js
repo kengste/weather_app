@@ -4,7 +4,7 @@ export default function(state = [], action) {
   console.log(action);
   switch (action.type) {
     case FETCH_LOCATION:
-      return action.payload.data || [];
+      return action.payload || [];
     default:
       return state;
   }
